@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #e0f7fa;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -19,6 +20,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; /* Adds space between the button and the meme */
 }
 
 /* Hover effect for the button */
@@ -27,15 +29,13 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Style for the cat fact display div */
+/* Style for the meme display div */
 #catfactdiv {
     width: 300px;
     height: 200px;
     margin-bottom: 20px;
     padding: 20px;
-    background-image: url("https://cdn.britannica.com/42/233842-050-E64243D7/Pomeranian-dog.jpg");
-    background-size: cover; /* Ensures the image covers the box without distortion */
-    background-position: center; /* Centers the image */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -47,13 +47,12 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-
-/* Hover effect for the cat fact div */
+/* Hover effect for the meme div */
 #catfactdiv:hover {
     transform: translateY(-10px);
 }
 
-/* Animation for when the cat fact is updated */
+/* Animation for when the meme is updated */
 @keyframes fadeIn {
     from {
         opacity: 0;
